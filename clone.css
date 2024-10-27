@@ -1,0 +1,250 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #161625;
+    background-image: url("C:\Users\VAISHNAVI\Downloads\clone bg.webp"); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(22, 22, 37, 0.8); /* Slight transparency */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links span, .github {
+    color: #888;
+    cursor: pointer;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Button styles */
+.contact-sales {
+    background: #fff;
+    color: #000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.get-started {
+    background: #0061ff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Main Hero Section */
+.main-content {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 800px;
+}
+
+.badge {
+    background-color: #7b61ff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ccc;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.code-box {
+    background-color: #22223b;
+    padding: 15px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 1em;
+    color: #bbb;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.copy-btn {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.announcement {
+    color: #7b61ff;
+}
+
+.announcement a {
+    color: #7b61ff;
+    text-decoration: none;
+}
+
+.announcement a:hover {
+    text-decoration: underline;
+}
+
+/* Features Section */
+.features {
+    padding: 50px;
+    background-color: rgba(31, 31, 51, 0.9);
+    text-align: center;
+    width: 100%;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature-box {
+    background: #33334d;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    color: #eee;
+}
+
+/* Use Cases Section */
+.use-cases {
+    padding: 50px;
+    background-color: rgba(39, 39, 61, 0.9);
+    text-align: center;
+    width: 100%;
+}
+
+.use-cases-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.use-case-box {
+    background: #33334d;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    color: #eee;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(31, 31, 51, 0.9);
+    color: #eee;
+}
+
+.testimonial-box {
+    background: #33334d;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: rgba(22, 22, 37, 0.8);
+    text-align: center;
+    color: #888;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.social-links a {
+    color: #7b61ff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
