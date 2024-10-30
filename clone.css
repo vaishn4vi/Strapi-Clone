@@ -8,6 +8,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #161625;
+    background-image: url("C:\Users\VAISHNAVI\Downloads\clone bg.webp"); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
     color: white;
     display: flex;
     flex-direction: column;
@@ -22,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(22, 22, 37, 0.8);
+    background-color: rgba(22, 22, 37, 0.8); /* Slight transparency */
 }
 
 .logo {
@@ -75,7 +78,9 @@ header {
 }
 
 /* Button styles */
-.contact-sales, .get-started {
+.contact-sales {
+    background: #fff;
+    color: #000;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
@@ -83,25 +88,14 @@ header {
     font-weight: bold;
 }
 
-.contact-sales {
-    background: #fff;
-    color: #000;
-}
-
 .get-started {
-    background: linear-gradient(90deg, #635BFF, #0A8CFF); /* Gradient effect */
-    color: #FFFFFF;
-    font-weight: bold;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 4px;
+    background: #0061ff;
+    color: #fff;
+    padding: 8px 16px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.get-started:hover {
-    background: linear-gradient(90deg, #514cd8, #007ACC); /* Hover effect */
+    font-weight: bold;
 }
 
 /* Main Hero Section */
@@ -112,14 +106,13 @@ header {
 }
 
 .badge {
-    background-color: #FF5A5F;
+    background-color: #7b61ff;
     color: #fff;
     padding: 5px 10px;
-    border-radius: 12px;
-    font-size: 0.9em;
-    font-weight: bold;
+    border-radius: 4px;
     display: inline-block;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 h1 {
@@ -146,102 +139,112 @@ p {
     font-size: 1em;
     color: #bbb;
     gap: 10px;
+    max-width: 600px;
 }
 
-.copy-btn, .demo-btn {
+.copy-btn {
     background: #444;
     color: #fff;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.copy-btn:hover, .demo-btn:hover {
-    background: #555;
+.announcement {
+    color: #7b61ff;
 }
 
-/* New Purple Button Section */
-.new-button-section {
-    margin-top: 20px;
+.announcement a {
+    color: #7b61ff;
+    text-decoration: none;
 }
 
-.new-purple-btn {
-    background-color: #6f4c7a;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-.new-purple-btn:hover {
-    background-color: #5b3c6a;
-}
-
-.live-text {
-    display: block;
-    margin-top: 10px;
-    font-size: 1em;
+.announcement a:hover {
+    text-decoration: underline;
 }
 
 /* Features Section */
-.features, .use-cases, .testimonials {
-    width: 100%;
-    padding: 60px 20px;
+.features {
+    padding: 50px;
+    background-color: rgba(31, 31, 51, 0.9);
     text-align: center;
-    background-color: #22223b;
+    width: 100%;
 }
 
-h2 {
-    font-size: 2.2em;
-    margin-bottom: 40px;
-}
-
-.features-container, .use-cases-container {
+.features-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.feature-box, .use-case-box {
-    background-color: #333;
-    border-radius: 8px;
+.feature-box {
+    background: #33334d;
     padding: 20px;
-    margin: 10px;
-    flex: 1 1 30%;
-    min-width: 250px;
-}
-
-.feature-box h3, .use-case-box h3 {
-    margin-bottom: 10px;
-}
-
-/* Testimonial Styles */
-.testimonial-box {
-    background-color: #444;
     border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
+    width: 30%;
+    color: #eee;
 }
 
-/* Footer Styles */
-footer {
-    width: 100%;
-    background-color: #161625;
-    color: #bbb;
+/* Use Cases Section */
+.use-cases {
+    padding: 50px;
+    background-color: rgba(39, 39, 61, 0.9);
     text-align: center;
+    width: 100%;
+}
+
+.use-cases-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.use-case-box {
+    background: #33334d;
     padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    color: #eee;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(31, 31, 51, 0.9);
+    color: #eee;
+}
+
+.testimonial-box {
+    background: #33334d;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: rgba(22, 22, 37, 0.8);
+    text-align: center;
+    color: #888;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .social-links a {
-    color: #bbb;
-    margin: 0 10px;
+    color: #7b61ff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
 }
